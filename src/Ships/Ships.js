@@ -1,7 +1,11 @@
 import React from 'react'
 
 const ships = (props) => {
-  return 'This is connected'
+  return {
+    length: props.length,
+    damageLocations: props.damageLocations,
+    isSunk: props.isSunk,
+  }
 }
 
 export default ships

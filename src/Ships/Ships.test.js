@@ -1,5 +1,6 @@
 import ships from './Ships.js';
 
-test('is connected', () => {
-  expect(ships()).toBe('This is connected');
+test('returns an object', () => {
+  expect(ships({length: 5, damageLocations: [1, 3], isSunk: false}))
+      .toEqual({length: 5, damageLocations: [1, 3], isSunk: false});
 });
