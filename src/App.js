@@ -2,7 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import ships from './Ships/Ships.js'
+
+
 function App() {
+  
+  console.log(ships({length: 4, damageLocations: [2, 3], isSunk: false}));
+
   return (
     <div className="App">
       <header className="App-header">

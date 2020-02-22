@@ -4,7 +4,7 @@ const ships = (props) => {
   return {
     length: props.length,
     damageLocations: props.damageLocations,
-    isSunk: props.isSunk,
+    isSunk: (props.length === props.damageLocations.length),
   }
 }
 
