@@ -6,8 +6,8 @@ import ships from './Ships/Ships.js'
 
 
 function App() {
-  
-  console.log(ships({length: 4, damageLocations: [2, 3], isSunk: false}));
+
+  console.log(ships({length: 4, damageLocations: [2, 3]}));
 
   return (
     <div className="App">
